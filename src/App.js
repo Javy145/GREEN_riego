@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+
+
 import './App.css';
+import Main from './componentes/Main.js'
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Main />
     </div>
   );
 }
 
 export default App;
+
+
+/*
+const [nodeC, setNodeC ] = useState(null);
+  useEffect(()=>{
+    fetch('http://localhost:1880/ui#!/0?socketid=Fu5tGxZXXFkZGnrvAAAB')
+      .then(response => response.text())
+      .then((result)=>{
+        setNodeC(result)
+        },
+        (error) => {
+          setNodeC('error');
+        }
+      );
+  })
+
+  <div dangerouslySetInnerHTML={{ __html: nodeC}}></div>
+*/
